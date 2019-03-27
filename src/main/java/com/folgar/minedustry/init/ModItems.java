@@ -17,6 +17,8 @@ public class ModItems
     public static void registerItems(RegistryEvent.Register<Item> event)
     {
         System.out.println("Initializing Items");
+        wrench.setRegistryName("wrench");
         event.getRegistry().register(wrench);
+
     }
 }
