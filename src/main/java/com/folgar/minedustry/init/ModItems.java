@@ -19,6 +19,5 @@ public class ModItems
         System.out.println("Initializing Items");
         wrench.setRegistryName("wrench");
         event.getRegistry().register(wrench);
-
     }
 }
