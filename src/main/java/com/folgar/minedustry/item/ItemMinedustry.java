@@ -29,8 +29,6 @@ public class ItemMinedustry extends Item
 
     protected String getUnwrappedUnlocalizedName(String unlocalizedName)
     {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
+    return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
-
-
 }
