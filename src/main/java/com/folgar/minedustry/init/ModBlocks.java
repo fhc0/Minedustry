@@ -1,6 +1,7 @@
 package com.folgar.minedustry.init;
 
 import com.folgar.minedustry.block.BlockBronze;
+import com.folgar.minedustry.block.BlockBronzeOre;
 import com.folgar.minedustry.block.BlockMinedustry;
 import com.folgar.minedustry.reference.Reference;
 import net.minecraft.block.Block;
@@ -17,13 +18,16 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class ModBlocks
 {
     public static final BlockMinedustry bronzeblock = new BlockBronze();
+    public static final BlockMinedustry bronzeore = new BlockBronzeOre();
 
     @SubscribeEvent
-    public static void registerBlocks(RegistryEvent.Register<Block> event)
-    {
+    public static void registerBlocks(RegistryEvent.Register<Block> event) {
         System.out.println("Initializing Blocks");
         bronzeblock.setRegistryName("bronze_block");
-        event.getRegistry().register(bronzeblock);
+        bronzeore.setRegistryName("bronze_ore");
+        event.getRegistry().registerAll(bronzeblock,bronzeore);
+
+
     }
 
     @SubscribeEvent

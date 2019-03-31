@@ -1,9 +1,9 @@
 package com.folgar.minedustry.block;
 
-import com.folgar.minedustry.reference.Reference;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.item.ItemStack;
+        import com.folgar.minedustry.reference.Reference;
+        import net.minecraft.block.Block;
+        import net.minecraft.block.material.Material;
+        import net.minecraft.item.ItemStack;
 
 public class BlockMinedustry extends Block
 {
@@ -26,5 +26,5 @@ public class BlockMinedustry extends Block
     protected String getUnwrappedUnlocalizedName(String unlocalizedName)
     {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
-    }
+}
 }
