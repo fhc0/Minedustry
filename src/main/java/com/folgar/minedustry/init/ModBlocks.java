@@ -34,13 +34,15 @@ public class ModBlocks
     public static void registerItemBlocks(RegistryEvent.Register<Item> event)
     {
         System.out.println("Initializing Block Items");
-        event.getRegistry().registerAll(new ItemBlock(bronzeblock).setRegistryName("bronze_block"));
+        event.getRegistry().register(new ItemBlock(bronzeblock).setRegistryName("bronze_block"));
+        event.getRegistry().register(new ItemBlock(bronzeore).setRegistryName("bronze_ore"));
     }
 
     @SubscribeEvent
     public static void registerRenders(ModelRegistryEvent event)
     {
         registerRender(Item.getItemFromBlock(bronzeblock));
+        registerRender(Item.getItemFromBlock(bronzeore));
     }
 
     private static void registerRender(Item item)
