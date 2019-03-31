@@ -5,6 +5,7 @@ public class ItemBronzeIngot extends ItemMinedustry {
     public ItemBronzeIngot()
     {
         super();
-        this.setUnlocalizedName("bronze_Ingot");
+        this.setUnlocalizedName("bronze_ingot");
+        this.maxStackSize = 64;
     }
 }

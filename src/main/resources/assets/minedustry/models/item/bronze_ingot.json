@@ -1,7 +1,7 @@
 {
-  "parent": "item/generation",
+  "parent": "item/generated",
   "textures": {
-    "layer0": "minedustry:items/bronze_Ingot"
+    "layer0": "minedustry:items/bronze_ingot"
   },
 
   "display": {

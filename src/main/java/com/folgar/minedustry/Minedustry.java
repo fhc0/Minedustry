@@ -1,5 +1,6 @@
 package com.folgar.minedustry;
 
+import com.folgar.minedustry.init.ModRecipes;
 import com.folgar.minedustry.proxy.IProxy;
 import com.folgar.minedustry.reference.Reference;
 import com.folgar.minedustry.worldgen.OreGen;
@@ -31,6 +32,7 @@ public class Minedustry
     {
         System.out.println("Initialization");
         GameRegistry.registerWorldGenerator(new OreGen(), 0);
+        ModRecipes.init();
     }
 
     @Mod.EventHandler()
